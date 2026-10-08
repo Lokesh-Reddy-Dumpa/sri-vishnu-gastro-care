@@ -1,9 +1,14 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/",
-      "destination": "/healthcare-frontend.html"
+      "src": "healthcare-frontend.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/healthcare-frontend.html"
     }
   ]
 }
