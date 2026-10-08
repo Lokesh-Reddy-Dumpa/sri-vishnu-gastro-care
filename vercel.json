@@ -1,14 +1,8 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "healthcare-frontend.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/healthcare-frontend.html"
+      "source": "/",
+      "destination": "/healthcare-frontend.html"
     }
   ]
 }
